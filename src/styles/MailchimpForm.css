@@ -1,0 +1,43 @@
+/* MailchimpForm.css */
+  
+  .mailchimp-form .newsletter {
+    /* Estilos específicos para el componente Newsletter */
+    text-align: center;
+  }
+  
+  .mailchimp-form .newsletter input {
+    /* Estilos para los campos de entrada */
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.375rem; /* Tailwind equivalent: rounded-md */
+    border: 1px solid #ddd;
+  }
+  
+  .mailchimp-form .newsletter button {
+    /* Estilos para el botón */
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 0.375rem; /* Tailwind equivalent: rounded-md */
+    cursor: pointer;
+  }
+  
+  .mailchimp-form .newsletter button:hover {
+    background-color: #45a049;
+  }
+  
+  .mailchimp-form .status-message {
+    /* Estilo para los mensajes de estado */
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .mailchimp-form .status-message.success {
+    color: #28a745;
+  }
+  
+  .mailchimp-form .status-message.error {
+    color: #dc3545;
+  }
+  

@@ -1,0 +1,95 @@
+/* Skills.css */
+
+.skills-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px; /* Altura mínima de la sección */
+}
+
+.skills-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgb(154, 95, 176);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 2s; /* Efecto de fade-in */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transiciones para el color y el movimiento */
+}
+
+.skills-title:hover {
+  color: #19002d; /* Cambia el color al pasar el cursor */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);  /* Sombra al pasar el mouse */
+  transform: scale(1.05);
+}
+
+.skills-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.2;
+  animation: fadeIn 2s;
+  animation-delay: 2s;
+}
+
+.skill-bar {
+  background-color: #2d2d2d;
+  border-radius: 9999px;
+  height: 0.5rem;
+  position: relative;
+}
+
+.skill-bar .progress {
+  height: 100%;
+  border-radius: 9999px;
+}
+
+.skill-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+}
+
+.skill-percentage {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mb-6 {
+  margin-bottom: 2rem; /* Mayor separación */
+  animation: slideIn 1.5s ease-in-out forwards; /* Animación de entrada */
+  opacity: 0; /* Para que no se muestren antes de animarse */
+}
+.mb-6:hover {
+  transform: scale(9.05); /* Aumenta ligeramente el tamaño */
+  background-color: rgba(9, 3, 10, 0.696); /* Fondo con un color suave */
+  box-shadow: 0 4px 10px rgba(203, 95, 213, 0.719); /* Sombra animada */
+}
+/* Keyframes para el efecto slide-in */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50px); /* Inicia desde la izquierda */
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    transform: translateX(0); /* Llega a su posición final */
+    opacity: 1; /* Visible */
+  }
+}
+
+.skills-section .flex {
+  gap: 2rem; /* Más separación entre filas */
+}
+
+.skills-section .flex > .w-full {
+  margin-bottom: 2rem; /* Separación entre columnas */
+}
+

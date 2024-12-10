@@ -1,0 +1,139 @@
+/* Contenedor principal del banner */
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding-top: 5rem;  /* py-20 */
+  padding-bottom: 8rem;  /* md:py-32 */
+}
+
+/* Estilo del contenedor interno */
+.banner-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;  /* px-6 */
+  padding-right: 1.5rem;  /* px-6 */
+}
+
+/* Texto */
+.banner-text {
+  width: 100%;
+  margin-top: mt-200px; /* mt-[-200px] */
+}
+
+.tagline {
+  display: inline-block;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(128, 0, 128, 0.5));
+  padding: 0.5rem 1rem;  /* px-4 py-2 */
+  font-weight: bold;
+  font-size: 1.125rem;  /* text-lg */
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.25rem;  /* mb-5 */
+}
+
+.banner-heading {
+  font-size: 3rem;  /* text-5xl */
+  font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 1rem;  /* mb-4 */
+  color: #190026;
+}
+
+.banner-heading:hover {
+  color: #000000;  /* Color blanco al pasar el mouse */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);  /* Sombra al pasar el mouse */
+  transform: scale(1.05); /* Efecto de aumentar al hacer hover */
+}
+/* Asegúrate de que txt-rotate esté debajo */
+.txt-rotate {
+  display: block;  /* Asegura que esté en un bloque, ocupando toda la línea */
+  margin-top: 1rem;  /* Agrega un poco de espacio arriba */
+  font-size: 50px;  /* Puedes ajustar el tamaño si lo deseas */
+  color: #1d0421;
+  text-align: center;  /* Centrado */
+}
+
+.banner-text-description {
+  color: rgb(16, 1, 24);
+  font-size: 25px; /* Tamaño del texto */
+  line-height: 1.75; /* Espaciado */
+  font-weight: bold; /* Negrita */
+  text-align: center; /* Centrado */
+  position: relative;
+  padding: 20px; /* Espaciado interno */
+  border-radius: 15px; /* Esquinas redondeadas */
+  background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border: 1px solid rgba(194, 111, 217, 0.2); /* Borde semi-transparente */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.banner-text-description:hover {
+  transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  text-shadow: 0 0 8px rgba(215, 156, 236, 0.8); /* Sombra del texto */
+  color: #000000;
+}
+
+
+/* Estilo de la imagen */
+.banner-image {
+  width: 100%;
+  margin-top: 2rem;  /* mt-8 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-image-zoom {
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Imagen de perfil */
+.banner-text img {
+  border-radius: 50%;
+  width: 180px;  /* 3x3 tamaño */
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 1rem;  /* Espacio debajo de la imagen */
+}
+.pdf-popup {
+  position: absolute;
+  top: 80px; /* Ajusta la posición vertical */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 700px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

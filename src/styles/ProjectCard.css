@@ -1,0 +1,25 @@
+/* Si decides mantener el archivo, se pueden aplicar estilos mínimos para personalización */
+.newsletter-container {
+    background-color: #6b46c1; /* Fondo violeta */
+    border-radius: 10px;
+  }
+  
+  .newsletter-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter-form input {
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .newsletter-form button {
+    background-color: #7f53ac; /* Fondo del botón */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  
